@@ -97,7 +97,7 @@
         - Most steps are transformers
         - Last step can be an estimator
 
-            ![Image](pipeline.png)
+            ![Image](images/pipeline.png)
 
 - Open-source libraries for feature engineering
     - Scikit-Learn

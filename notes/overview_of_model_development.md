@@ -124,6 +124,6 @@
 - Version tracking for reproducibility
 - Classes and functions include tests - no need to record for production
 
-    ![Drag Racing](ml_pipelines.png)
+    ![Image](images/ml_pipelines.png)
 
 

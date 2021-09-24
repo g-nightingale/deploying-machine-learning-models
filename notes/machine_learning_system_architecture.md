@@ -22,7 +22,8 @@
 
 ## 1.9 Challenges of ML systems
 - The ML component usually only plays a small part in a much larger system:
-![Image](ml_systems_are_complex.png)
+
+    ![Image](images/ml_systems_are_complex.png)
 
 - Challenges
     - Reproducibility (versioning everywhere)
@@ -36,7 +37,8 @@
         - A breakdown in communication can lead to a deployment underperforming or failing
 
 - Research vs production environments
-    ![Image](research_vs_prod.png)
+
+    ![Image](images/research_vs_prod.png)
 
 ## 2.0 Key principles for machine learning systems
 - ML has only recent started to play an important role for technology companies
@@ -90,7 +92,7 @@ Model artefact packaged within the consuming application
 - Simplciity vs flexibility
     - Simple but not flexible, if we update our model we need to release a new version of our app
 
-    ![Image](arc_1.png)
+    ![Image](images/arc_1.png)
 
 ### Architecture 2: Dedicated model API
 Model is wrapped in a service that can be deployed independently
@@ -100,7 +102,7 @@ Model is wrapped in a service that can be deployed independently
 - Simplicity vs flexibility
     - Increased complexity in maintaining another service, but flexibility because our model deployments are separate from our main application deployment
 
-    ![Image](arc_2.png)
+    ![Image](images/arc_2.png)
 
 ### Architecture 3: Model published as data
 Application subscribes to events and ingests new models in memory
@@ -109,7 +111,7 @@ Application subscribes to events and ingests new models in memory
 - Variations: Different publish/subscribe patterns
     - Increased complexity in infrastructure, however we can seamlessly upgrade our models
 
-    ![Image](arc_3.png)
+    ![Image](images/arc_3.png)
 
 ### Architecture 4: Offline predictions
 - Pre-trained: Yes
@@ -117,13 +119,14 @@ Application subscribes to events and ingests new models in memory
 - Variations: Serve, predictions via API, CSV, dashboards
 - Outdated architecture
 
-    ![Image](arc_4.png)
+    ![Image](images/arc_4.png)
 
 
 There is no "best" architecture, simply a set of trade-offs that best meet system requirements based on time and resource constraints
 
 ### Architecture comparison
-![Image](arc_comparison.png)
+
+![Image](images/arc_comparison.png)
 
 ## 2.2 Machine learning system component breakdown
 - High level architecture
@@ -134,16 +137,19 @@ There is no "best" architecture, simply a set of trade-offs that best meet syste
 
 - Training phase
     - Three steps grouped into a single pipeline:
-    ![Image](training_phase.png)
+
+        ![Image](images/training_phase.png)
 
     - Scikit-Learn and Pandas can be used for simple pipelines
     - Apache spark and Apache Airflow used for more intricate pipelines
 
 - Prediction phase
-    ![Image](prediction_phase.png)
+
+    ![Image](images/prediction_phase.png)
 
 - Training and prediction
-    ![Image](training_and_prediction.png)
+
+    ![Image](images/training_and_prediction.png)
 
 - Must also consider infrastructure, external services, dependencies and running our continuous integration and deployment pipeline
 
@@ -152,4 +158,4 @@ There is no "best" architecture, simply a set of trade-offs that best meet syste
     - Artifacts: Trained models and Docker images, which will enable us to snapshot our application and its dependencies for quick deployment
     - Deploying the ML application in an automated way using both platform as a service and infrastructure as a service, which are both different cloud hosting options
 
-    ![Image](cicd_1.png)
+        ![Image](images/cicd_1.png)
