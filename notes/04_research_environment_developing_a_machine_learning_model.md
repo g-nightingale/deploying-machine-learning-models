@@ -141,6 +141,14 @@
     - TransformerMixin
     - Etc
 
+## 5.2 Should feature selection be part of the pipeline?
+- Suitable
+    - Model build and refreshed on the same data
+    - Model build and refreshed on smaller datasets
+- Not suitable
+    - If model built using datasets with a high feature space → large amount of feature engineering code required
+    - If model constantly enriched with new data sources
+
 
 
 
