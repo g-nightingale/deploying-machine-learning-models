@@ -25,5 +25,9 @@
     - Major changes breaks the API
     - Minor changes do not break the API
     - Patches fix bugs
-- Need to define what versions of our dependencies we expect
+- Need to define what versions of our dependencies we expect, and how much risk we are willing to accept with version ranges
 - pip install -r requirements.txt
+
+## 6.1 Working with Tox
+- Tox is a generic virutalenv management and test command line tool
+- Agnostic to OS differences
