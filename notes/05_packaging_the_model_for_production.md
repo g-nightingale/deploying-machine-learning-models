@@ -16,3 +16,14 @@
     - Package structure
 
         ![Image](images/package_structure.png)
+
+
+## 6.0 Package requirements files
+- Version control
+    - Semantic versioning
+    - Major.Minor.Patch
+    - Major changes breaks the API
+    - Minor changes do not break the API
+    - Patches fix bugs
+- Need to define what versions of our dependencies we expect
+- pip install -r requirements.txt
