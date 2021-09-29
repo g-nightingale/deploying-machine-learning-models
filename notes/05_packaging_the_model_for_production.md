@@ -1,6 +1,6 @@
 # Packaging the model for production
 
-## 5.6 Intropduction to production code
+## 5.6 Introduction to production code
 - Production code is designed to be deployed to end users
 - New considerations vs research environment:
     - Testability and maintainability
@@ -29,5 +29,23 @@
 - pip install -r requirements.txt
 
 ## 6.1 Working with Tox
+- Use Tox to trigger train pipeline script
 - Tox is a generic virutalenv management and test command line tool
+    - Don't have to worry about differerent OS
+    - Get same behaviour across platforms
+    - Don't need to setup Python paths or configure environment variables
 - Agnostic to OS differences
+- [] Square brackets represent different tox environments
+    - Creates a virtual environment in the .tox hidden directory
+- [tox] → default env
+- [testenv] → like a base class
+    - Commands will be replicated whenever we inherit from this base class testenv
+    - e.g.: [testenv:test_package]
+- Use tox -e <env-name> to specify an environment to run
+
+## 6.3 Package config
+- Why use YAML for configuration?
+    - Want to limit power of config files
+    - Remove temptation to add functionality that might add risks and bugs
+    - Can be edited by devs who don't know Python
+- Python ** unpacks key value pairs
