@@ -42,10 +42,25 @@
     - Commands will be replicated whenever we inherit from this base class testenv
     - e.g.: [testenv:test_package]
 - Use tox -e <env-name> to specify an environment to run
+- Need to be in same directory as tox.ini file, use cd in command prompt
 
 ## 6.3 Package config
 - Why use YAML for configuration?
     - Want to limit power of config files
     - Remove temptation to add functionality that might add risks and bugs
     - Can be edited by devs who don't know Python
-- Python ** unpacks key value pairs
+- def func(**kwargs)
+    - Function only takes keyword arguments
+    - E.g.: func(a=1, b=2)
+
+## 6.5 Introduction to Pytest
+- Defacto standard in industry
+- Richer assert statements during failures
+- Auto discovery of test modules and functions
+- Modular fixtures 
+- Backwards compatible with unit test library
+
+## 6.6
+- Feature engineering is a very common source of bugs
+- Important to test all feature engineer code
+- Need to be thorough in test coverage
