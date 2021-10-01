@@ -66,4 +66,29 @@
 - Need to be thorough in test coverage
 
 ## 6.7 Making predictions with the package
-- 
+- Check multiple rows or a subset of a dataset
+- Set tolerances appropriate to risk appetite
+
+## 6.8 Building the package
+- A package is a collection of python modules
+- Notoriously complex, debate in the Python community around best practice
+- Relevant files:
+    - pyproject.toml
+        - Lines 1-6 specify basic dependencies to install the package
+        - Rest of file is used for configuring tooling
+    - setup.py
+        - This is where the majority of packaging functionality lives
+        - Package meta-data, requirements
+    - MANIFEST.in
+        - Which files should be included and excluded in the package
+- Building the package
+    - Need to install PyPA's build
+        - conda install --channel conda-forge build
+        - pip install --upgrade build
+    - Build package
+        - python -m build
+    - dist directory
+        - .whl → faster to install
+        - .tar → legacy
+
+
