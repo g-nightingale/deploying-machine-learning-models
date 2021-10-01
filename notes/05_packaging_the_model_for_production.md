@@ -60,7 +60,10 @@
 - Modular fixtures 
 - Backwards compatible with unit test library
 
-## 6.6
+## 6.6 Feature engineering code in the package
 - Feature engineering is a very common source of bugs
 - Important to test all feature engineer code
 - Need to be thorough in test coverage
+
+## 6.7 Making predictions with the package
+- 
