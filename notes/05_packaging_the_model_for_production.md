@@ -90,5 +90,18 @@
     - dist directory
         - .whl → faster to install
         - .tar → legacy
+    - tid_regression_model.egg-info
+
+## 6.9 Tooling
+- test_requirements.txt
+    - black → code styling enforcement tool, reformats code if it's not PEP8
+    - flake8 → linting tool 
+    - mypy → type checking tool
+    - isort → ensures imports are in the correct order
+- These checks are being used on the different directories
+- These tools make our code easier for other people to use, and reduce chance of introducing bugs
+- mypy.ini
+    - COnfigures what sorts of type hints we are going to worry about
+
 
 
