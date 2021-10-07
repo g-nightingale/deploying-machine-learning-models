@@ -31,3 +31,20 @@
 - Future of web development in Python
 - Really good documentation
 
+## 7.5 Using Schemas in our API
+- Fast API can convert inputs to the correct type according to a schema
+    - Input passed as string but should be an integer according to schema
+
+## 7.6 Logging
+- Critical to understanding what's happening on our server
+- Can't rely on print statements
+    - Need to persist any information that we capture
+- Use Python logging library
+- Specify logging level
+- Loguru simplifies configuration for logging
+
+## 7.7 The Uvicorn Web Server
+- Production → need dedicated web server
+- Uvicorn is an implementation of the Asynchronous Server Gateway Interface (ASGI)
+    - Spiritual successor to WSGI
+    - Uses asynchronous applications → much faster
