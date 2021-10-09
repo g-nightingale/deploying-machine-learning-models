@@ -93,3 +93,15 @@
     - Push a specific subdirectory
 - Command line → heroku logs --tail
     - Get the last logs
+- Heroku free tier is not suitable for a serious production application 
+
+## 8.0 Understanding the Heroku specific project files
+- Procfile
+    - Heroku requirement
+    - Specifies commands to run our app
+    - Heroku dynamically assigns a port, therefore we don't need to specify a port
+- runtime.txt
+    - Specify what version of Python we are going to use
+- requirements.txt
+    - By default, Heroku looks for a requirements.txt file
+    - It won't install our test_requirements.txt
