@@ -37,6 +37,15 @@
 - Heroku environmental variables
     - PIP_EXTRA_INDEX_URL
 
+## 8.5 CI / CD Config
+- config.yml
+    - workflows section near bottom
+        - Defines the sequence in which jobs will be run
+        - Run tests for API
+        - Deploy API to Heroku
+- Jobs are defined in jobs block of the config.yml file
+- Need to add environmental variables to CircleCI:
+    - HEROKU_APP_NAME
+    - HEROKU_API_KEY
 
-
-    ![Image](images/cicd.png)
+    ![Image](images/image.png)
