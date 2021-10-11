@@ -68,7 +68,13 @@
     - Try not to focus too much on specific technologies
 
 ## 8.7 Using a Private Index Server
-- 
+- Workflow
+    1. Make some kind of change to model package
+    2. Bump the version
+    3. Open a pull request
+    4. Tests will run
+    5. Merge pull request and create a tag
+    6. Tag triggers a publish job
 
 
 
