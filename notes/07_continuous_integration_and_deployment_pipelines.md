@@ -48,4 +48,28 @@
     - HEROKU_APP_NAME
     - HEROKU_API_KEY
 
+## 8.6 CI / CD Automation 2
+- In some cases we might want to publish a private package to a private index server
+    - Sensitive intellectual property
+- Gemfury
+    - Managed file server
+    - Free trial
+- Location of private package added to requirements.txt
+    - --extra-index-url=${PIP_EXTRA_INDEX_URL}
+- CircleCI additional environmental variables
+    - PIP_EXTRA_INDEX_URL
+    - KAGGLE_KEY
+    - KAGGLE_USERNAME
+    - GEMFURY_PUSH_URL → Same as PIP_EXTRA_INDEX_URL (but could have different access levels)
+- Heroku additional environmental variables
+    - PIP_EXTRA_INDEX_URL
+- Best practice NOT TO STORE DATA IN REPO
+- Conceptual understanding is important
+    - Try not to focus too much on specific technologies
+
+## 8.7 Using a Private Index Server
+- 
+
+
+
     ![Image](images/image.png)
